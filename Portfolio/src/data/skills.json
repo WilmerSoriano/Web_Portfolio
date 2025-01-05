@@ -1,0 +1,30 @@
+[
+   {
+     "title": "Assembly",
+     "imageSrc": "skills/Assembly.png"
+   },
+   {
+     "title": "C",
+     "imageSrc": "skills/C.png"
+   },
+   {
+     "title": "C++",
+     "imageSrc": "skills/Cpp.png"
+   },
+   {
+     "title": "Database",
+     "imageSrc": "skills/Database.png"
+   },
+   {
+     "title": "Java",
+     "imageSrc": "skills/Java.png"
+   },
+   {
+     "title": "Linux",
+     "imageSrc": "skills/Linux.png"
+   },
+   {
+     "title": "Python",
+     "imageSrc": "skills/python.png"
+   }
+ ]

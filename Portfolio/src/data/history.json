@@ -1,0 +1,18 @@
+[
+   {
+     "role": "Pharmacy Technician",
+     "organisation": "CVS",
+     "startDate": "May, 2023",
+     "endDate": "Present",
+     "experiences": ["Using SIG codes for prescription", "Work understress with a Team"],
+     "imageSrc": "history/CVS.png"
+   },
+   {
+     "role": "Office Assistant",
+     "organisation": "UTA-Parking",
+     "startDate": "May, 2023",
+     "endDate": "Jul, 2022",
+     "experiences": ["Worked with Office 365 Applications", "manage document processing and administrative."],
+     "imageSrc": "history/UTA.png"
+   }
+ ]

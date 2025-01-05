@@ -34,7 +34,11 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>OS</h3>
               <p>
-                I have experience...
+              I have hands-on experience in Operating Systems development using 
+              C programming, including process management with fork and exec, 
+              multithreading with pthread, file operations with system calls, 
+              memory allocation simulations, and basic scheduling algorithms 
+              such as Round Robin.
               </p>
             </div>
           </li>
@@ -46,7 +50,10 @@ export const About = () => {
             <div className={styles.aboutItemText}>
               <h3>OOP</h3>
               <p>
-                I have
+              I have experience in Object-Oriented Programming (OOP) 
+              with Java and some C++, including concepts such as inheritance,
+              polymorphism, encapsulation, abstraction, and interface 
+              implementation, and I use ANT and XML for project compilation.
               </p>
             </div>
           </li>
