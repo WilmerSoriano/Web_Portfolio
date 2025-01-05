@@ -8,11 +8,9 @@ export const Hero = () => {
          <div className={styles.content}>
             <h1 className={styles.title}>Welcome to my Portfolio</h1>
             <p className={styles.description}>
-               My name is Wilmer Soriano. 
-               I am a Computer Science Major at 
-               the University of Texas at Arligton.
-               
-               Reach out to me : 
+               My name is Wilmer Soriano.<br/> 
+               I am a Computer Science Major at<br/> 
+               the University of Texas at Arlington.<br/> 
             </p>
             <a href="mailto:official_Wilmer.2020@outlook.com" className={styles.contactBtn}>
                Contact Me</a>
