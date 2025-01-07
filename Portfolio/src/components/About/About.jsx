@@ -1,5 +1,6 @@
 import React from "react";
 
+import { getImageUrl } from "../../utils";
 import styles from "./About.module.css";
 
 export const About = () => {
@@ -8,15 +9,16 @@ export const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src="assets/about/aboutImage.png"
-          alt="Buisness Man"
+          src={getImageUrl("about/aboutImage.png")}
+          alt="Me sitting with a laptop"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
             <img 
-               src="assets/about/cursorIcon.png" 
-               alt="Cursor icon" />
+              src={getImageUrl("about/roboIcon.png")} 
+              alt="Cursor icon"
+            />
             <div className={styles.aboutItemText}>
               <h3>Computer Science</h3>
               <p>
@@ -28,7 +30,7 @@ export const About = () => {
           </li>
           <li className={styles.aboutItem}>
             <img 
-               src="assets/about/serverIcon.png"
+               src= {getImageUrl("about/serverIcon.png")}
                alt="Server icon"
             />
             <div className={styles.aboutItemText}>
@@ -44,7 +46,7 @@ export const About = () => {
           </li>
           <li className={styles.aboutItem}>
             <img
-               src="assets/about/uiIcon.png"
+               src= {getImageUrl("about/uiIcon.png")}
                alt="UI icon"
             />
             <div className={styles.aboutItemText}>
