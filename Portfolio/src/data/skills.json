@@ -26,5 +26,9 @@
    {
      "title": "Python",
      "imageSrc": "skills/python.png"
+   },
+   {
+      "title": "MySQL",
+      "imageSrc": "skills/SQL.png"
    }
  ]

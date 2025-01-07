@@ -1,0 +1,26 @@
+[
+   {
+     "title": "Store Database",
+     "imageSrc": "projects/store.png",
+     "description": "here!",
+     "skills": ["x", "x", "x"],
+     "demo": "https://www.example.com",
+     "source": "https://www.github.com"
+   },
+   {
+     "title": "Library Managment",
+     "imageSrc": "projects/library.png",
+     "description": "",
+     "skills": ["x", "x", "x", "x"],
+     "demo": "https://www.example.com",
+     "source": "https://www.github.com"
+   },
+   {
+     "title": "Algorithms",
+     "imageSrc": "projects/programming.png",
+     "description": "",
+     "skills": ["x", "x", "x"],
+     "demo": "https://www.example.com",
+     "source": "https://www.github.com"
+   }
+ ]

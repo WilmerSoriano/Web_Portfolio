@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
+  margin-top: 45px;
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
@@ -30,7 +30,6 @@
     rgba(255, 255, 255, 1) 70%,
     rgba(255, 255, 255, 0) 120%
   );
-  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
@@ -61,6 +60,8 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+
+  margin-left: auto;
 }
 
 @keyframes floating {
@@ -106,6 +107,7 @@
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+    justify-content: center;
   }
 
   .content {
