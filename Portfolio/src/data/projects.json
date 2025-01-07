@@ -1,26 +1,28 @@
 [
    {
+    "_comment": "Future refrence use the design below to add more projects(REMOVE the demo comment on Project.jsx if used)",
+
      "title": "Store Database",
      "imageSrc": "projects/store.png",
-     "description": "here!",
-     "skills": ["x", "x", "x"],
+     "description": "This is a straightforward project designed to illustrate key store operations, including inventory management and customer interactions.",
+     "skills": ["MySQL", "php", "HTML"],
      "demo": "https://www.example.com",
-     "source": "https://www.github.com"
+     "source": "https://github.com/WilmerSoriano/Store_Database.git"
    },
    {
      "title": "Library Managment",
      "imageSrc": "projects/library.png",
-     "description": "",
-     "skills": ["x", "x", "x", "x"],
+     "description": "This project demonstrates the application of Object-Oriented Programming (OOP) principles to develop a library system for managing the check-in and check-out of books and videos. ",
+     "skills": ["Java", "XML"],
      "demo": "https://www.example.com",
-     "source": "https://www.github.com"
+     "source": "https://github.com/WilmerSoriano/Sample.git"
    },
    {
      "title": "Algorithms",
      "imageSrc": "projects/programming.png",
-     "description": "",
-     "skills": ["x", "x", "x"],
+     "description": "This project showcases my understanding of algorithm design and demonstrates how to appropriately apply each algorithm to its respective scenario and use case.",
+     "skills": ["C", "Terminal", "Algorithm Design"],
      "demo": "https://www.example.com",
-     "source": "https://www.github.com"
+     "source": "https://github.com/WilmerSoriano/More_C_Program.git"
    }
  ]
