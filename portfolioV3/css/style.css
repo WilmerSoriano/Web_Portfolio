@@ -1,3 +1,6 @@
+/*Contains all the colors for all elements and general styles*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
     --primary: #3b82f6;
     --secondary: #1e40af;
