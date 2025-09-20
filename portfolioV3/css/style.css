@@ -1,0 +1,300 @@
+:root {
+    --primary: #3b82f6;
+    --secondary: #1e40af;
+    --dark: #ff12ff;
+    --light: #f8fafc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* General dark mode background */
+body.dark {
+    background-color: #2a435c;
+    color: #0f172a;
+}
+
+    /* Dark mode section headers and underline */
+body.dark .gradient-text {
+    background: none !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+body.dark h2 span.absolute {
+    background: #ffffff !important;
+}
+
+/* Hero section background */
+#home {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+/* Dark mode hero section */
+body.dark #home {
+    background: linear-gradient(135deg, #1e3a8a, #1e40af); /* darker blue tones */
+}
+
+    /* Keep Home section contact button white in dark mode */
+body.dark #home a[href="#contact"] {
+    background-color: #ffffff !important;
+    color: #2563eb !important; /* blue text */
+}
+/* Resume button always stays white */
+.resume-btn {
+    background-color: #ffffff !important;
+    color: #2563eb !important;
+}
+
+.resume-btn:hover {
+    background-color: #f3f4f6 !important;
+}
+
+/* Dark mode should not affect resume button */
+body.dark .resume-btn {
+    background-color: #ffffff !important;
+    color: #2563eb !important;
+}
+
+
+    /* Dark mode contact section background */
+body.dark #contact {
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
+}
+
+
+/* Navbar */
+body.dark nav {
+    background: linear-gradient(135deg, #1e3a8a, #1e40af);
+}
+
+/* Section backgrounds */
+body.dark .bg-gray-200 {
+    background-color: #334155 !important;
+}
+
+body.dark .bg-white {
+    background-color: #1e293b !important;
+}
+
+/* Skill & About Me boxes */
+body.dark .skill-item,
+body.dark #about .bg-gray-200 {
+    background-color: #3e65a3 !important;
+    color: #f1f5f9;
+}
+
+/* Dark mode fix for experience boxes */
+body.dark .bg-gray-100 {
+    background-color: #3e65a3 !important; /* dark blue/gray */
+    color: #f1f5f9; /* light text */
+}
+    /* Dark mode fix for experience dates */
+body.dark #experience p.text-blue-600 {
+    color: #ffffff !important;
+}
+
+/* Projects */
+body.dark .project-card {
+    background-color: #1e293b !important;
+    color: #2a68a6;
+}
+    /* Fix invisible underline under My Projects */
+body.dark #projects h2 span.absolute {
+    background: #ffffff !important;
+}
+
+    /* Dark mode project tech bubbles */
+/* Dark mode ONLY for project tech bubbles */
+body.dark #projects .tech-bubble {
+    background-color: #3e65a3 !important;
+    color: #f1f5f9 !important;
+}
+
+body.dark .project-card p,
+body.dark .project-card h3,
+body.dark .project-card span {
+    color: #f1f5f9 !important;
+}
+
+/* Contact box */
+body.dark #contact .bg-white {
+    background-color: #334155 !important;
+    color: #f8fafc;
+}
+
+    /* Fix Contact Me underline in dark mode */
+body.dark #contact h2 span.absolute {
+    background: #ffffff !important;
+}
+
+/* Footer */
+body.dark footer {
+    background-color: #0f172a !important;
+}
+
+/* Optional blue accent borders */
+body.dark .project-card,
+body.dark .skill-item {
+    border: 1px solid #3b82f6;
+}
+
+.skill-item, 
+.project-card, 
+#about .bg-gray-200 {
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.skill-icon {
+    transition: all 0.3s ease;
+}
+
+.skill-icon:hover {
+    transform: translateY(-10px) scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.project-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 129, 255, 0.8);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.active::after {
+    width: 100%;
+}
+
+/* Gradient text styling */
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom placeholder images */
+.placeholder-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f63b3b, #4caf1e);
+    color: rgba(71, 4, 70, 0.327);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to top button */
+#back-to-top {
+    transition: all 0.3s ease;
+}
+
+#back-to-top:hover {
+    transform: scale(1.1) rotate(10deg);
+    background-color: #2563eb;
+}
+
+/* Typing animation cursor */
+#typed-text::after {
+    content: "|";
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Dark mode toggle button */
+#dark-mode-toggle {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    padding: 12px;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+    /* Default light mode button */
+#dark-mode-toggle {
+    background-color: black; /* Moon button in light mode */
+    color: white;
+}
+
+/* Dark mode button */
+body.dark #dark-mode-toggle {
+    background-color: white; /* Sun button in dark mode */
+    color: black;
+}

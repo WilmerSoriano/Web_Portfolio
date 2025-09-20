@@ -295,16 +295,29 @@
     }
     
     #dark-mode-toggle:hover {
-        background-color: #ffffff;
         transform: scale(1.1);
     }
+
+        /* Default light mode button */
+    #dark-mode-toggle {
+        background-color: black; /* Moon button in light mode */
+        color: white;
+    }
+
+    /* Dark mode button */
+    body.dark #dark-mode-toggle {
+        background-color: white; /* Sun button in dark mode */
+        color: black;
+    }
+
 </style>
 </head>
 <body class="bg-gray-50 text-slate-800">
     <!-- Dark Mode Toggle -->
-    <button id="dark-mode-toggle" class="text-xl">
-        🌙
+    <button id="dark-mode-toggle" class="text-xl w-10 h-10 flex items-center justify-center rounded-full transition duration-300">
+        🌚
     </button>
+
 
     <!-- Navigation -->
     <nav class="gradient-bg text-white fixed w-full z-50 shadow-md">
@@ -412,7 +425,7 @@
             </div>
         </div>
     </section>
-<!--C/C++, Java, Python| MySQL, Docker Desktop, CUDA | Assembly programming, and tools like Microsoft Office 365.-->
+
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-200 reveal">
         <div class="container mx-auto px-4">
@@ -438,43 +451,54 @@
                 </div>
                 
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
-                    <img src="assets/skills/Database.png" alt="Database" class="w-16 h-16 mb-3">
-                    <span class="font-medium">Database</span>
-                </div>
-                
-                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
                     <img src="assets/skills/Java.png" alt="Java" class="w-16 h-16 mb-3">
                     <span class="font-medium">Java</span>
                 </div>
-                
-                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
-                    <img src="assets/skills/Linux.png" alt="Linux" class="w-16 h-16 mb-3">
-                    <span class="font-medium">Linux</span>
-                </div>
-                
+      
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
                     <img src="assets/skills/python.png" alt="Python" class="w-16 h-16 mb-3">
                     <span class="font-medium">Python</span>
                 </div>
                 
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
-                    <img src="assets/skills/SQL.png" alt="MySQL" class="w-16 h-16 mb-3">
-                    <span class="font-medium">MySQL</span>
-                </div>
-
-                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
-                    <img src="assets/skills/web.png" alt="Automaing" class="w-16 h-16 mb-3">
-                    <span class="font-medium">Automating Testing</span>
-                </div>
-
-                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
-                    <img src="assets/skills/server.png" alt="UDP/TCP" class="w-16 h-16 mb-3">
-                    <span class="font-medium">UDP/TCP</span>
+                    <img src="assets/skills/Linux.png" alt="Linux" class="w-16 h-16 mb-3">
+                    <span class="font-medium">Linux/Unix</span>
                 </div>
 
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
                     <img src="assets/skills/Cuda.png" alt="CUDA" class="w-32 h-20 mb-3">
                     <span class="font-medium">Nvidia CUDA</span>
+                </div>
+
+                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
+                    <img src="assets/skills/Docker.png" alt="Docker" class="w-16 h-16 mb-3">
+                    <span class="font-medium">Docker</span>
+                </div>
+
+                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
+                    <img src="assets/skills/SQL.png" alt="MySQL" class="w-16 h-16 mb-3">
+                    <span class="font-medium">MySQL</span>
+                </div>
+
+                
+                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
+                    <img src="assets/skills/server.png" alt="UDP/TCP" class="w-16 h-16 mb-3">
+                    <span class="font-medium">Networking Protocols</span>
+                </div>
+
+                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
+                    <img src="assets/skills/Crypto.png" alt="Cryptography" class="w-16 h-16 mb-3">
+                    <span class="font-medium">Cryptography</span>
+                </div>
+
+                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
+                    <img src="assets/skills/VM.png" alt="Virtual Machine" class="w-16 h-16 mb-3">
+                    <span class="font-medium">Virtual Machines</span>
+                </div>
+
+                <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
+                    <img src="assets/skills/web.png" alt="Automaing" class="w-16 h-16 mb-3">
+                    <span class="font-medium">Automating Testing</span>
                 </div>
 
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
@@ -541,12 +565,12 @@
                     <a href="https://github.com/WilmerSoriano/Store_Database.git" target="_blank" rel="noopener noreferrer">
                         <img src="assets/projects/store.png" alt="Store Database" class="w-full h-64 object-cover">
                         <div class="overlay">
-                            <p>Click to view project on GitHub!</p>
+                            <p>Click to view project!</p>
                         </div>
                     </a>
                         <div class="p-6">
                          <h3 class="text-xl font-semibold mb-2">Store Database</h3>
-                         <p class="text-gray-600 mb-4">This is a straightforward project designed to illustrate key store operations, including inventory management and customer interactions.</p>
+                         <p class="text-gray-600 mb-4">This is a Back-end project designed to illustrate key store operations, including inventory management and customer interactions.</p>
                          <div class="flex flex-wrap gap-2">
                             <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MySQL</span>
                             <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">PHP</span>
@@ -559,12 +583,12 @@
                     <a href="https://github.com/WilmerSoriano/Sample/tree/main/JavaProgram" target="_blank" rel="noopener noreferrer">
                         <img src="assets/projects/library.png" alt="Library Management" class="w-full h-64 object-cover">
                         <div class="overlay">
-                            <p>Click to view project on GitHub!</p>
+                            <p>Click to view project!</p>
                         </div>
                     </a>
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Library Management</h3>
-                        <p class="text-gray-600 mb-4">This project demonstrates the application of Object-Oriented Programming (OOP) principles to develop a library system for managing the check-in and check-out of books and videos.</p>
+                        <p class="text-gray-600 mb-4">This project demonstrates my use of Object-Oriented Programming (OOP) principles to develop a library managing system that check-in and check-out books and videos.</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Java</span>
                             <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">XML</span>
@@ -576,7 +600,7 @@
                     <a href="https://github.com/WilmerSoriano/More_C_Program.git" target="_blank" rel="noopener noreferrer">
                         <img src="assets/projects/programming.png" alt="Algorithms" class="w-full h-64 object-cover">
                         <div class="overlay">
-                            <p>Click to view project on GitHub!</p>
+                            <p>Click to view project!</p>
                         </div>
                     </a>
                         <div class="p-6">
@@ -736,7 +760,7 @@
         
         // Typing animation
         const typedText = document.getElementById('typed-text');
-        const phrases = ["Welcome to my Portfolio", "I am Wilmer Soriano", "Undergraduate Computer Scientist"];
+        const phrases = ["Welcome to my Portfolio", "I am Wilmer Soriano", "Computer Scientist", "Cybersecurity", "AI and Tech Passionate"];
         let i = 0, j = 0, currentPhrase = [], isDeleting = false;
 
         function type() {
@@ -764,10 +788,24 @@
         
         // Dark mode toggle
         const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+
+        // Initialize icon based on current body class
+        const updateToggleIcon = () => {
+            if (document.body.classList.contains('dark')) {
+                darkModeToggle.textContent = '🌞'; 
+            } else {
+                darkModeToggle.textContent = '🌚'; 
+            }
+        };
+
         darkModeToggle.addEventListener('click', () => {
             document.body.classList.toggle('dark');
-            darkModeToggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+            updateToggleIcon();
         });
+
+        // Initialize on page load
+        updateToggleIcon();
     </script>
 </body>
 </html>
