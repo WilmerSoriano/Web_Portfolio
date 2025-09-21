@@ -1,26 +1,32 @@
-/*Contains all the colors for all elements and general styles*/
-
+/* ===== GOOGLE FONT IMPORT ===== */
+/* Importing Poppins font family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== CSS VARIABLES (CUSTOM PROPERTIES) ===== */
+/* Contains all the colors for all elements and general styles */
 :root {
-    --primary: #3b82f6;
-    --secondary: #1e40af;
-    --dark: #ff12ff;
-    --light: #f8fafc;
+    --primary: #3b82f6;      /* Primary blue color */
+    --secondary: #1e40af;    /* Darker blue for gradients */
+    --dark: #ff12ff;         /* Accent color ... idk what it does */
+    --light: #f8fafc;        /* Light background color */
 }
 
+/* ===== BASE STYLES ===== */
+/* General body styles and transitions */
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* General dark mode background */
+/* ===== DARK MODE GENERAL STYLES ===== */
+/* General dark mode background and text colors */
 body.dark {
     background-color: #2a435c;
     color: #0f172a;
 }
 
-    /* Dark mode section headers and underline */
+/* Section headers and underline in dark mode */
 body.dark .gradient-text {
     background: none !important;
     -webkit-text-fill-color: #ffffff !important;
@@ -31,7 +37,8 @@ body.dark h2 span.absolute {
     background: #ffffff !important;
 }
 
-/* Hero section background */
+/* ===== HERO SECTION STYLES ===== */
+/* Hero section background gradient */
 #home {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
@@ -41,12 +48,13 @@ body.dark #home {
     background: linear-gradient(135deg, #1e3a8a, #1e40af); /* darker blue tones */
 }
 
-    /* Keep Home section contact button white in dark mode */
+/* Keep Home section contact button white in dark mode */
 body.dark #home a[href="#contact"] {
     background-color: #ffffff !important;
     color: #2563eb !important; /* blue text */
 }
-/* Resume button always stays white */
+
+/* Resume button styles (always stays white) */
 .resume-btn {
     background-color: #ffffff !important;
     color: #2563eb !important;
@@ -62,19 +70,19 @@ body.dark .resume-btn {
     color: #2563eb !important;
 }
 
-
-    /* Dark mode contact section background */
+/* Dark mode contact section background */
 body.dark #contact {
     background: linear-gradient(135deg, #1e3a8a, #1e40af);
 }
 
-
-/* Navbar */
+/* ===== NAVIGATION STYLES ===== */
+/* Navbar dark mode styles */
 body.dark nav {
     background: linear-gradient(135deg, #1e3a8a, #1e40af);
 }
 
-/* Section backgrounds */
+/* ===== SECTION BACKGROUNDS ===== */
+/* Section backgrounds in dark mode */
 body.dark .bg-gray-200 {
     background-color: #334155 !important;
 }
@@ -83,78 +91,89 @@ body.dark .bg-white {
     background-color: #1e293b !important;
 }
 
-/* Skill & About Me boxes */
+/* ===== SKILLS & ABOUT ME SECTION ===== */
+/* Skill & About Me boxes in dark mode */
 body.dark .skill-item,
 body.dark #about .bg-gray-200 {
     background-color: #3e65a3 !important;
     color: #f1f5f9;
 }
 
+/* ===== EXPERIENCE SECTION ===== */
 /* Dark mode fix for experience boxes */
 body.dark .bg-gray-100 {
     background-color: #3e65a3 !important; /* dark blue/gray */
     color: #f1f5f9; /* light text */
 }
-    /* Dark mode fix for experience dates */
+
+/* Dark mode fix for experience dates */
 body.dark #experience p.text-blue-600 {
     color: #ffffff !important;
 }
 
-/* Projects */
+/* ===== PROJECTS SECTION ===== */
+/* Project cards in dark mode */
 body.dark .project-card {
     background-color: #1e293b !important;
     color: #2a68a6;
 }
-    /* Fix invisible underline under My Projects */
+
+/* Fix invisible underline under My Projects in dark mode */
 body.dark #projects h2 span.absolute {
     background: #ffffff !important;
 }
 
-    /* Dark mode project tech bubbles */
-/* Dark mode ONLY for project tech bubbles */
+/* Dark mode project tech bubbles */
 body.dark #projects .tech-bubble {
     background-color: #3e65a3 !important;
     color: #f1f5f9 !important;
 }
 
+/* Project card text in dark mode */
 body.dark .project-card p,
 body.dark .project-card h3,
 body.dark .project-card span {
     color: #f1f5f9 !important;
 }
 
-/* Contact box */
+/* ===== CONTACT SECTION ===== */
+/* Contact box in dark mode */
 body.dark #contact .bg-white {
     background-color: #334155 !important;
     color: #f8fafc;
 }
 
-    /* Fix Contact Me underline in dark mode */
+/* Fix Contact Me underline in dark mode */
 body.dark #contact h2 span.absolute {
     background: #ffffff !important;
 }
 
-/* Footer */
+/* ===== FOOTER SECTION ===== */
+/* Footer in dark mode */
 body.dark footer {
     background-color: #0f172a !important;
 }
 
-/* Optional blue accent borders */
+/* ===== COMPONENT STYLES ===== */
+/* Optional blue accent borders for cards in dark mode */
 body.dark .project-card,
 body.dark .skill-item {
     border: 1px solid #3b82f6;
 }
 
+/* Transition effects for skill items and project cards */
 .skill-item, 
 .project-card, 
 #about .bg-gray-200 {
     transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
+/* Gradient background utility class */
 .gradient-bg {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
+/* Skill icon hover effects */
 .skill-icon {
     transition: all 0.3s ease;
 }
@@ -164,6 +183,7 @@ body.dark .skill-item {
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
+/* Project card styles and hover effects */
 .project-card {
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -180,6 +200,7 @@ body.dark .skill-item {
     opacity: 1;
 }
 
+/* Project overlay effect */
 .overlay {
     position: absolute;
     top: 0;
@@ -197,6 +218,7 @@ body.dark .skill-item {
     transition: opacity 0.3s ease;
 }
 
+/* Navigation link styles */
 .nav-link {
     position: relative;
 }
@@ -239,7 +261,8 @@ body.dark .skill-item {
     text-align: center;
 }
 
-/* Reveal animation */
+/* ===== ANIMATIONS ===== */
+/* Reveal animation for scroll effects */
 .reveal {
     opacity: 0;
     transform: translateY(50px);
@@ -251,7 +274,7 @@ body.dark .skill-item {
     transform: translateY(0);
 }
 
-/* Back to top button */
+/* Back to top button styles */
 #back-to-top {
     transition: all 0.3s ease;
 }
@@ -272,7 +295,8 @@ body.dark .skill-item {
     50% { opacity: 0; }
 }
 
-/* Dark mode toggle button */
+/* ===== DARK MODE TOGGLE BUTTON ===== */
+/* Dark mode toggle button styles */
 #dark-mode-toggle {
     position: fixed;
     top: 80px;
@@ -290,13 +314,13 @@ body.dark .skill-item {
     transform: scale(1.1);
 }
 
-    /* Default light mode button */
+/* Default light mode button (moon) */
 #dark-mode-toggle {
     background-color: black; /* Moon button in light mode */
     color: white;
 }
 
-/* Dark mode button */
+/* Dark mode button (sun) */
 body.dark #dark-mode-toggle {
     background-color: white; /* Sun button in dark mode */
     color: black;
