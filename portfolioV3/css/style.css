@@ -250,7 +250,7 @@ body.dark .skill-item {
     background-clip: text;
 }
 
-/* Custom placeholder images */
+/* Custom placeholder images => Image or network issues */
 .placeholder-img {
     display: flex;
     align-items: center;
@@ -314,7 +314,7 @@ body.dark .skill-item {
     transform: scale(1.1);
 }
 
-/* Default light mode button (moon) */
+/* Default light mode button */
 #dark-mode-toggle {
     background-color: black; /* Moon button in light mode */
     color: white;
