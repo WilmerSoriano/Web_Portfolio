@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wilmer Soriano Portfolio</title>
+    
+    <!-- External Resources -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="text-slate-800">
-    <!-- Dark Mode Toggle -->
+    <!-- ===== DARK MODE TOGGLE ===== -->
     <button id="dark-mode-toggle" class="text-xl w-10 h-10 flex items-center justify-center rounded-full transition duration-300">
         🌚
     </button>
-    <!-- Navigation -->
+
+    <!-- ===== NAVIGATION ===== -->
     <nav class="gradient-bg text-white fixed w-full z-50 shadow-md">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo/Brand -->
             <a href="#" class="text-2xl font-bold">Wilmer<span class="text-blue-200">.</span></a>
+            
+            <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
@@ -25,91 +32,111 @@
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
+            
+            <!-- Mobile Menu Toggle -->
             <button class="md:hidden focus:outline-none" id="menu-toggle">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
         </div>
-        <!-- Mobile Menu -->
+        
+        <!-- Mobile Menu (Hidden by default) -->
         <div class="md:hidden hidden bg-blue-700 w-full py-4 px-4" id="mobile-menu">
             <div class="flex flex-col space-y-4">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href= "#experience" class="nav-link">Experience</a>
+                <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO SECTION ===== -->
     <section id="home" class="gradient-bg text-white min-h-screen flex items-center pt-16">
         <div class="container mx-auto px-4 py-20 flex flex-col md:flex-row items-center">
+            <!-- Hero Text Content -->
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <h1 class="text-4xl md:text-6xl font-bold mb-4">
                     <span id="typed-text"></span>
                 </h1>
-                <p class="text-xl mb-6">My name is <span class="font-bold">Wilmer Soriano </span>. <br> 
+                <p class="text-xl mb-6">My name is <span class="font-bold">Wilmer Soriano</span>. <br> 
                 I am a Computer Scientist passionate about AI and technology, with strong foundations in secure programming and cybersecurity.</p>
-                <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold inline-block hover:bg-blue-100 transition duration-300">Contact Me</a>
-                <a href="WilmerSoriano_Resume.pdf" class="resume-btn px-6 py-3 rounded-full font-semibold inline-block transition duration-300">Download Resume</a>
+                
+                <!-- Call-to-Action Buttons -->
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold inline-block hover:bg-blue-100 transition duration-300">Contact Me</a>
+                    <a href="WilmerSoriano_Resume.pdf" class="resume-btn px-6 py-3 rounded-full font-semibold inline-block transition duration-300">Download Resume</a>
+                </div>
             </div>
+            
+            <!-- Hero Image -->
             <div class="md:w-1/2 flex justify-center">
                 <img src="assets/hero/heroImage.png" alt="Wilmer Soriano" class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover border-8 border-white shadow-xl">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ===== ABOUT SECTION ===== -->
     <section id="about" class="py-20 bg-white reveal">
         <div class="container mx-auto px-4">
+            <!-- Section Header -->
             <h2 class="text-4xl font-bold text-center mb-16 relative">
                 <span class="gradient-text relative">About Me</span>
                 <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></span>
             </h2>
             
             <div class="flex flex-col md:flex-row items-center">
+                <!-- About Image -->
                 <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
-                    <img src="assets/about/aboutImage.png" alt="About Wilmer" class="rounded-lg  drop-shadow-[0_0_20px_#3b82f6] w-full max-w-md">
+                    <img src="assets/about/aboutImage.png" alt="About Wilmer" class="rounded-lg drop-shadow-[0_0_20px_#3b82f6] w-full max-w-md">
                 </div>
+                
+                <!-- About Content Cards -->
                 <div class="md:w-1/2 md:pl-12">
                     <div class="mb-8 p-6 bg-gray-200 rounded-lg shadow-sm">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-400 p-3 rounded-full mr-4">
-                                <i><img src="assets/about/roboIcon.png" alt="Wilmer Soriano" class="w-10 h-auto" /></i>
+                                <img src="assets/about/roboIcon.png" alt="Computer Science Icon" class="w-10 h-auto" />
                             </div>
                             <h3 class="text-xl font-semibold">Computer Science</h3>
                         </div>
-                        <p>I’m a Computer Scientist passionate about AI, machine learning, and large language models. 
+                        <p>I'm a Computer Scientist passionate about AI, machine learning, and large language models. 
                             I love designing efficient algorithms and building tools that solve real-world problems. 
-                            For me, Computer Science isn’t just a major, it’s a way to turn ideas into reality and shape the future of technology.</p>
+                            For me, Computer Science isn't just a major, it's a way to turn ideas into reality and shape the future of technology.
+                        </p>
                     </div>
                     
+                    <!-- Cybersecurity Card -->
                     <div class="mb-8 p-6 bg-gray-200 rounded-lg shadow-sm">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-500 p-3 rounded-full mr-4">
-                              <i><img src="assets/about/serverIcon.png" alt="Wilmer Soriano" class="w-10 h-auto" /></i>
+                                <img src="assets/about/serverIcon.png" alt="Cybersecurity Icon" class="w-10 h-auto" />
                             </div>
                             <h3 class="text-xl font-semibold">Cybersecurity</h3>
                         </div>
-                        <p>As AI becomes a bigger part of our lives, securing online systems is more important than ever. 
+                        <p>
+                            As AI becomes a bigger part of our lives, securing online systems is more important than ever. 
                             While I major in Computer Science, my interest in protecting the internet led me to earn a Cybersecurity Certificate. 
-                            I focus on understanding evolving threats and building secure, trustworthy systems, ensuring that the future of AI is safe and resilient.</p>
+                            I focus on understanding evolving threats and building secure, trustworthy systems, ensuring that the future of AI is safe and resilient.
+                        </p>
                     </div>
                     
+                    <!-- Knowledge & Tools Card -->
                     <div class="p-6 bg-gray-200 rounded-lg shadow-sm">
                         <div class="flex items-center mb-4">
                             <div class="bg-blue-500 p-3 rounded-full mr-4">
-                                <i><img src="assets/about/uiIcon.png" alt="Wilmer Soriano" class="w-10 h-auto" /></i>
+                                <img src="assets/about/uiIcon.png" alt="Knowledge & Tools Icon" class="w-10 h-auto" />
                             </div>
                             <h3 class="text-xl font-semibold">Knowledge & Tools</h3>
                         </div>
                         <p>
-                            Throughout my academic and project experience, I’ve developed strong technical skills in 
+                            Throughout my academic and project experience, I've developed strong technical skills in 
                             programming and comfortable in terminal environments. 
-                            I’ve worked with CUDA for parallel computing, and network protocols like TCP, UDP, and DNS. 
+                            I've worked with CUDA for parallel computing, and network protocols like TCP, UDP, and DNS. 
                             I have strong fundamentals in Information Security and cryptography topics such as DES, AES, and secure practices.
-                            <br><br>  
+                            <br>
+                            <br>  
                             <b>My foundation includes:</b> OOP, Algorithms, Operating Systems, Functional programming, Database Management, 
                             Networking, AI, Compilers, and Software Testing, giving me a versatile, structured approach to 
                             problem-solving and secure programming.
@@ -120,17 +147,19 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- ===== SKILLS SECTION ===== -->
     <section id="skills" class="py-20 bg-gray-200 reveal">
         <div class="container mx-auto px-4">
+            <!-- Section Header -->
             <h2 class="text-4xl font-bold text-center mb-16 relative">
                 <span class="gradient-text relative">My Skills</span>
                 <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-16 h-1 gradient-bg rounded-full"></span>
             </h2>
             
+            <!-- Skills Grid -->
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
-                    <img src="assets/skills/Assembly.png" alt="Assembly" class="w-16 h-16 mb-3 ">
+                    <img src="assets/skills/Assembly.png" alt="Assembly" class="w-16 h-16 mb-3">
                     <span class="font-medium">Assembly</span>
                 </div>
                 
@@ -174,7 +203,6 @@
                     <span class="font-medium">MySQL</span>
                 </div>
 
-                
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
                     <img src="assets/skills/server.png" alt="UDP/TCP" class="w-16 h-16 mb-3">
                     <span class="font-medium">Networking Protocols</span>
@@ -191,7 +219,7 @@
                 </div>
 
                 <div class="skill-item flex flex-col items-center p-6 bg-white rounded-lg shadow-sm skill-icon">
-                    <img src="assets/skills/web.png" alt="Automaing" class="w-16 h-16 mb-3">
+                    <img src="assets/skills/web.png" alt="Automating" class="w-16 h-16 mb-3">
                     <span class="font-medium">Automating Testing</span>
                 </div>
 
@@ -203,22 +231,25 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- ===== EXPERIENCE SECTION ===== -->
     <section id="experience" class="py-20 bg-white reveal">
         <div class="container mx-auto px-4">
+            <!-- Section Header -->
             <h2 class="text-4xl font-bold text-center mb-16 relative">
                 <span class="gradient-text relative">My Experience</span>
                 <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></span>
             </h2>
             
+            <!-- Experience Items -->
             <div class="max-w-3xl mx-auto space-y-8">
+                <!-- CVS Experience -->
                 <div class="bg-gray-100 p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
                     <div class="md:w-1/4 flex justify-center mb-4 md:mb-0">
                         <img src="assets/history/CVS.png" alt="CVS" class="w-20 h-20 object-contain">
                     </div>
                     <div class="md:w-3/4">
                         <h3 class="text-xl font-semibold mb-2">Pharmacy Technician, CVS Pharmacy</h3>
-                        <p class="text-blue-600 font-medium mb-3">March, 2023 - May 2025 </p>
+                        <p class="text-blue-600 font-medium mb-3">March, 2023 - May 2025</p>
                         <ul class="list-disc pl-5 space-y-1">
                             <li>Operated CVS pharmacy interface and utilized SIG codes to accurately access, update, and manage sensitive patient information.</li>
                             <li>Effectively deescalated tense situations with customers, maintaining professionalism and supporting a positive pharmacy experience.</li>
@@ -228,6 +259,7 @@
                     </div>
                 </div>
                 
+                <!-- UTA Experience -->
                 <div class="bg-gray-100 p-6 rounded-lg shadow-sm flex flex-col md:flex-row">
                     <div class="md:w-1/4 flex justify-center mb-4 md:mb-0">
                         <img src="assets/history/UTA.png" alt="UTA" class="w-20 h-20 object-contain">
@@ -246,15 +278,18 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ===== PROJECTS SECTION ===== -->
     <section id="projects" class="py-20 bg-gray-200 reveal">
         <div class="container mx-auto px-4">
+            <!-- Section Header -->
             <h2 class="text-4xl font-bold text-center mb-16 relative">
                 <span class="gradient-text relative">My Projects</span>
                 <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 gradient-bg rounded-full"></span>
             </h2>
             
+            <!-- Projects Grid -->
             <div class="grid md:grid-cols-3 gap-8">
+                <!-- Store Database Project -->
                 <div class="project-card bg-white rounded-lg overflow-hidden">
                     <a href="https://github.com/WilmerSoriano/Store_Database.git" target="_blank" rel="noopener noreferrer">
                         <img src="assets/projects/store.png" alt="Store Database" class="w-full h-64 object-cover">
@@ -262,10 +297,10 @@
                             <p>Click to view project!</p>
                         </div>
                     </a>
-                        <div class="p-6">
-                         <h3 class="text-xl font-semibold mb-2">Store Database</h3>
-                         <p class="text-gray-600 mb-4">This is a Back-end project designed to illustrate key store operations, including inventory management and customer interactions.</p>
-                         <div class="flex flex-wrap gap-2">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Store Database</h3>
+                        <p class="text-gray-600 mb-4">This is a Back-end project designed to illustrate key store operations, including inventory management and customer interactions.</p>
+                        <div class="flex flex-wrap gap-2">
                             <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">MySQL</span>
                             <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">PHP</span>
                             <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML</span>
@@ -273,6 +308,7 @@
                     </div>
                 </div>
                 
+                <!-- Library Management Project -->
                 <div class="project-card bg-white rounded-lg overflow-hidden">
                     <a href="https://github.com/WilmerSoriano/Sample/tree/main/JavaProgram" target="_blank" rel="noopener noreferrer">
                         <img src="assets/projects/library.png" alt="Library Management" class="w-full h-64 object-cover">
@@ -290,6 +326,7 @@
                     </div>
                 </div>
                 
+                <!-- Algorithms Project -->
                 <div class="project-card bg-white rounded-lg overflow-hidden">
                     <a href="https://github.com/WilmerSoriano/More_C_Program.git" target="_blank" rel="noopener noreferrer">
                         <img src="assets/projects/programming.png" alt="Algorithms" class="w-full h-64 object-cover">
@@ -297,23 +334,24 @@
                             <p>Click to view project!</p>
                         </div>
                     </a>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2">Algorithms</h3>
-                            <p class="text-gray-600 mb-4">This project showcases my understanding of algorithm design and demonstrates how to appropriately apply each algorithm to its respective scenario and use case.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">C</span>
-                                <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Terminal</span>
-                                <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Algorithm Design</span>
-                            </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Algorithms</h3>
+                        <p class="text-gray-600 mb-4">This project showcases my understanding of algorithm design and demonstrates how to appropriately apply each algorithm to its respective scenario and use case.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">C</span>
+                            <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Terminal</span>
+                            <span class="tech-bubble px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Algorithm Design</span>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ===== CONTACT SECTION ===== -->
     <section id="contact" class="gradient-bg text-white py-20 reveal">
         <div class="container mx-auto px-4">
+            <!-- Section Header -->
             <h2 class="text-4xl font-bold text-center mb-16 relative">
                 <span class="relative">Contact Me</span>
                 <span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-white rounded-full"></span>
@@ -322,27 +360,29 @@
             <div class="max-w-2xl mx-auto">
                 <p class="text-center text-xl mb-10">Feel free to reach out to me for collaborations, questions, or just to say hello!</p>
                 
-                    <div class="mt-8 text-center">
-                        <a href="mailto:official_Wilmer.2020@outlook.com" class="inline-block bg-gray-300 text-blue-600 px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition duration-300">
-                            <i class="fas fa-envelope mr-2"></i>official_Wilmer.2020@outlook.com
-                        </a>
-                    </div>
-
+                <!-- Contact Email -->
+                <div class="mt-8 text-center">
+                    <a href="mailto:official_Wilmer.2020@outlook.com" class="inline-block bg-gray-300 text-blue-600 px-6 py-2 rounded-md font-medium hover:bg-gray-200 transition duration-300">
+                        <i class="fas fa-envelope mr-2"></i>official_Wilmer.2020@outlook.com
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Brand Info -->
                 <div class="mb-4 md:mb-0">
                     <a href="#" class="text-2xl font-bold">Wilmer<span class="text-blue-400">.</span></a>
                     <p class="mt-2 text-gray-400">Computer Science and CyberSecurity</p>
                 </div>
                 
-                <div class="flex space-x-6">
-                  <p class="mt-2 text-gray-400">Check more about me here</p>
+                <!-- Social Links -->
+                <div class="flex items-center space-x-6">
+                    <p class="mt-2 text-gray-400">Check more about me here</p>
                     <a href="https://www.linkedin.com/in/wilmer-s-a37b18264/" class="text-gray-400 hover:text-white transition duration-300">
                         <i class="fab fa-linkedin-in text-xl"></i>
                     </a>
@@ -352,13 +392,14 @@
                 </div>
             </div>
             
+            <!-- Copyright -->
             <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
                 <p>&copy; 2025 Wilmer Soriano. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
+    <!-- ===== BACK TO TOP BUTTON ===== -->
     <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
         <i class="fas fa-arrow-up"></i>
     </button>
