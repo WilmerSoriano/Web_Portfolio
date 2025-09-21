@@ -5,10 +5,10 @@
 /* ===== CSS VARIABLES (CUSTOM PROPERTIES) ===== */
 /* Contains all the colors for all elements and general styles */
 :root {
-    --primary: #3b82f6;      /* Primary blue color */
-    --secondary: #1e40af;    /* Darker blue for gradients */
+    --primary: #3b82f6;    
+    --secondary: #1e40af;    
     --dark: #ff12ff;         /* Accent color ... idk what it does */
-    --light: #f8fafc;        /* Light background color */
+    --light: #f8fafc;        
 }
 
 /* ===== BASE STYLES ===== */
