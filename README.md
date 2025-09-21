@@ -4,5 +4,5 @@ Version 3.0 of my portfolio website is out!🔥
 
 Check it out here 👉 [wilmer-portfolio.netlify.app](https://wilmer-portfolio.netlify.app/)
 
-[![Portfolio Preview](assets/hero/heroImage.png)](https://wilmer-portfolio.netlify.app/)
+[![Portfolio Preview](portfolioV3/assets/hero/heroImage.png)](https://wilmer-portfolio.netlify.app/)
 
